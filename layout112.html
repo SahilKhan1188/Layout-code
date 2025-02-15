@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouting WebPage</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: black;
+            color: aqua;
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: rgb(44, 40, 48);
+            color: aquamarine;
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        nav a{
+            color: rgb(76, 201, 206);
+            text-decoration: none;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+            color: brown;
+        }
+       section {
+        background-color: rgb(56, 63, 63);
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin-bottom: 10px;
+       }
+       .left {
+        width: 69%;
+        background-color: aquamarine;
+        padding: 20px;
+        text-align: center;
+        justify-content: space-between;
+       }
+       .Right {
+        width: 30%;
+        background-color: rgb(117, 126, 126);
+        text-align: center;
+       }
+       footer {
+        background-color: blueviolet;
+        text-align: center;
+        width: 100%;
+        height: 70px;
+       }
+       .LEFTchild {
+       background-color: beige;
+        height: 100px;
+        width: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        display: flex;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My WebPage</h1>
+    </header>
+    <nav>
+        <a href=" # " >Home</a>
+        <a href=" # ">Contect</a>
+        <a href=" # ">About</a>
+        <a href=" # ">Information</a>
+    </nav>
+    <section>
+        <div class="left">
+            <h2>The Left Section of Page </h2>
+            <p>layouting WebPage<p>
+                <div class="LEFTchild">
+                    <h5>hii</h5>
+                </div>
+                <div class="LEFTchild">
+                    <h5>hii</h5>
+                </div>
+                <div class="LEFTchild">
+                    <h5>hii</h5>
+                </div>
+                <div class="LEFTchild">
+                    <h5>hii</h5>
+                </div>
+        </div>
+        <div class="Right">
+            <h3>The Right Section Of Page</h3>
+            <p>layouting page</p>
+        </div>
+    </section>
+    <footer> 
+        <h4>&copy;Sahil khan</h4>
+        <p>The footer of the page</p>
+    </footer>
+</body>
+</html>
